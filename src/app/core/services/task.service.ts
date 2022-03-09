@@ -16,4 +16,12 @@ export class TaskService {
     return this.http.get<Task[]>(`${this.tasksUrl}/todo`)
   }
 
+  deleteTask(task:Task): Observable<any> {
+    return this.http.delete<any>(`${this.tasksUrl}/todo/${task.id}`)
+  }
+
+  doneTask(task:Task): Observable<Task> {
+    return this.http.post<Task>(`${this.tasksUrl}/done`,task)
+  }
+
 }

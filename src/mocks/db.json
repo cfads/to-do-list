@@ -1,11 +1,24 @@
 {
-  "todo": [
-    {"task": "Comer" },
-    {"task": "Dormir" },
-    {"task": "Comer" },
-    {"task": "Dormir" }
-  ],
+  "todo": [],
   "done": [
-    { "task": "Já fiz"}
+    {
+      "task": "Já fiz"
+    },
+    {
+      "id": 3,
+      "task": "Comer"
+    },
+    {
+      "id": 4,
+      "task": "Dormir"
+    },
+    {
+      "id": 1,
+      "task": "Comer"
+    },
+    {
+      "id": 2,
+      "task": "Dormir"
+    }
   ]
 }

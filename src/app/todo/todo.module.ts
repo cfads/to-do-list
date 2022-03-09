@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TodoComponent } from './todo.component';
 import { MaterialModule } from '../material/material/material.module';
 import { TodoRoutingModule } from './todo-routing.module';
+import { TodoComponent } from './components/todo/todo.component';
+import { TodoDetailsComponent } from './components/todo-details/todo-details.component';
 
 
 
 @NgModule({
-  declarations: [TodoComponent],
+  declarations: [TodoComponent, TodoDetailsComponent],
   imports: [
     CommonModule,
     MaterialModule,

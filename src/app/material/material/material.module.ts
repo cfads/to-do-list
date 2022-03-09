@@ -10,7 +10,7 @@ const MODULES = [
   MatTooltipModule,
   MatIconModule,
   MatButtonModule,
-  MatTableModule
+  MatTableModule,
 ]
 
 @NgModule({
