@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuItem } from './core/models/menu-item.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'to-do-list';
+  title = 'To Do List';
+  menuItems:MenuItem[] = [
+    {
+      icon: "turned_in_not",
+      routerLink: "/todo",
+      toolTipText: "To Do"
+    },
+    {
+      icon: "done",
+      routerLink: "/done",
+      toolTipText: "Done"
+    }
+  ]
 }
