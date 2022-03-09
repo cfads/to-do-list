@@ -10,12 +10,12 @@ export class AppComponent {
   title = 'To Do List';
   menuItems:MenuItem[] = [
     {
-      icon: "turned_in_not",
+      icon: "listed",
       routerLink: "/todo",
       toolTipText: "To Do"
     },
     {
-      icon: "done",
+      icon: "verified",
       routerLink: "/done",
       toolTipText: "Done"
     }

@@ -1,6 +1,9 @@
 {
   "todo": [
-    {"task": "Algo" }
+    {"task": "Comer" },
+    {"task": "Dormir" },
+    {"task": "Comer" },
+    {"task": "Dormir" }
   ],
   "done": [
     { "task": "Já fiz"}

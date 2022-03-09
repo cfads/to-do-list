@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Task } from '../core/models/task.model';
+import { TaskService } from '../core/services/task.service';
 
 @Component({
   selector: 'app-todo',
@@ -6,12 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todo.component.scss']
 })
 
-export class TodoComponent{
+export class TodoComponent implements OnInit{
 
+  displayedColumns: string[] = ['task','edit','remove','done'];
+  tasks:Task [] = [];
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = [
+  constructor(public taskService:TaskService){}
 
-  ];
+  ngOnInit(): void {
+    this.getTasks();
+  }
+
+  getTasks(): void {
+    this.taskService.getTasks().subscribe(r=>this.tasks = r);
+  }
 
 }
