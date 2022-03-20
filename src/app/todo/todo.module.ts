@@ -4,6 +4,7 @@ import { MaterialModule } from '../material/material/material.module';
 import { TodoRoutingModule } from './todo-routing.module';
 import { TodoComponent } from './components/todo/todo.component';
 import { TodoDetailsComponent } from './components/todo-details/todo-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -12,7 +13,8 @@ import { TodoDetailsComponent } from './components/todo-details/todo-details.com
   imports: [
     CommonModule,
     MaterialModule,
-    TodoRoutingModule
+    TodoRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class TodoModule { }
