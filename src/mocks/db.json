@@ -1,30 +1,17 @@
 {
-  "todo": [
+  "todo": [],
+  "done": [
     {
-      "task": "Teste",
-      "id": 1
+      "id": 1,
+      "task": "Teste "
     },
     {
       "task": "Teste 2",
       "id": 2
-    }
-  ],
-  "done": [
-    {
-      "id": 4,
-      "task": "Voar"
     },
     {
-      "id": 3,
-      "task": "Estudar"
-    },
-    {
-      "task": "teste 2",
-      "id": 2
-    },
-    {
-      "id": 1,
-      "task": "Correr Dnv"
+      "task": "Teste 3",
+      "id": 3
     }
   ]
 }

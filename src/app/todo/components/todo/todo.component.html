@@ -37,7 +37,7 @@
       <ng-container matColumnDef="done">
         <th mat-header-cell *matHeaderCellDef>  </th>
         <td mat-cell *matCellDef="let element">
-          <button (click)="doneTask(element); $event.stopPropagation(); deleteTask(element)" mat-icon-button matTooltip="Done">
+          <button (click)="doneTask(element); deleteTask(element) ;$event.stopPropagation() " mat-icon-button matTooltip="Done">
             <mat-icon color="primary">done</mat-icon>
           </button>
         </td>

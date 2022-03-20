@@ -6,12 +6,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { DoneComponent } from './done/done.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    DoneComponent,
   ],
   imports: [
     BrowserModule,
